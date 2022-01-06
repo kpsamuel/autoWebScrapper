@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b64074cc-68a3-4b6e-af1e-16c503dcd70b",
+		"name": "autowebscrapper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "appstatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5002/api/v1/appstatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"v1",
+						"appstatus"
+					]
+				},
+				"description": "to check the server status up or down"
+			},
+			"response": []
+		},
+		{
+			"name": "account registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "project_name",
+							"value": "googleCloud",
+							"type": "text"
+						},
+						{
+							"key": "web_template",
+							"type": "file",
+							"src": "/D:/machine_learning_projects/NLP/accountIntelligence/templates/google_cloud_press_release.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/v1/registeraccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"v1",
+						"registeraccount"
+					]
+				},
+				"description": "account registration is a step to take in the template of website to scrap automatically. this template is used for data scrapping and storing in DB with accountid"
+			},
+			"response": []
+		},
+		{
+			"name": "scraprequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"account_id\" : \"6f879e96-6f19-11ec-bab2-c8b29b70e10c\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/api/v1/scraprequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"api",
+						"v1",
+						"scraprequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
