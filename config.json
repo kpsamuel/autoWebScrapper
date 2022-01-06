@@ -1,0 +1,8 @@
+{
+"apiHostName" : "localhost",
+"apiPortNumber" : "5002",
+"dbhost" : "localhost",
+"dbport" : 27017,
+"dbname" : "autoscrappeddata",
+"templates" : "monitoringWebScrappers",
+"watch_buffer" : "60"}
