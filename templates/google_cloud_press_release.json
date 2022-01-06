@@ -1,0 +1,15 @@
+{
+	"template_name" : "google_cloud_press_release",
+	"domain" : "https://cloud.google.com",
+	"page" : "/press-releases",
+	"website" : "https://cloud.google.com/press-releases",
+	"data" : [{"type" : "text",
+				"information" : {
+					"post_date" : "DEC 20",
+					"post_title" : "Google Cloud Partners With Minsait to Boost Digital Sovereignty in Spain"
+				}
+			}],
+	"urls_to_scrap" : ["https://cloud.google.com/press-releases"]
+}
+
+
